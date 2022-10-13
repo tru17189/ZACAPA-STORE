@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  position: absolute;
+  height: 100%; 
+  width: 100%;
+  background-image: url("Images/Background/Zacapa-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-link {
+  color: #3e4344;
+}
+
+.Bar-menu-horizontal {
+  position: relative;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  top: -20px;
+}
+
+.Bar-menu-horizontal a {
+  color: white;
+  text-decoration: none;
+}
+
+.Bar-menu-horizontal a:hover {
+  color: black;
+}
+
+.Bar-menu-horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Bar-menu-horizontal li {
+  display: inline;
+  padding: 1%;
+}
+
+.Main-title {
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 210%;
+  color: white;
+  top: -16px;
+}
+
+.square {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
