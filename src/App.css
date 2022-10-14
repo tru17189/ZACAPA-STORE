@@ -29,7 +29,7 @@
 
 .Bar-menu-horizontal {
   position: relative;
-  color: white;
+  color: color;
   font-family: 'Times New Roman', Times, serif;
   font-size: 100%;
   top: -20px;
@@ -55,15 +55,23 @@
   padding: 1%;
 }
 
+.Bar-menu-horizontal:hover {
+  background-color: white;
+  color: black;
+}
+
 .Main-title {
   position: relative;
   font-family: 'Times New Roman', Times, serif;
   font-size: 210%;
   color: white;
-  top: -16px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 .square {
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: white;
