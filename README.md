@@ -1,4 +1,6 @@
 # ZACAPA-STORE
 
 # FIRST WE HAVE TO INSTALL REACT FRAMEWORK
-##  - WITH THIS FRAMEWORK IT'S NECESSARY RUN NEXT COMMAND (THIS WILL HELP US WITH VADILATIONS) " npm i -S prop-types "
+##  npm i -S prop-types
+##  npm install -g serve
+##  serve -s build
