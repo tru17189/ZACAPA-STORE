@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 
 const Main_title = props => 
-<div className='Bar-menu-horizontal'>
-    <h1 className="Main-title">{props.msg}</h1>
+<div className='Main-title'>
+    <h1>{props.msg}</h1>
 </div>
 
 /*class Componente extends Component{
