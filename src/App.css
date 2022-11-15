@@ -1,7 +1,7 @@
 .App-header {
   position: relative;
   height: 100%; 
-  width: 100%;
+  width: auto;
   background-image: url("Images/Background/Zacapa-background-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +17,8 @@
   width: 100%;
   height: auto;
   font-size: 90%;
+  border-bottom: solid;
+  border-color: rgba(128, 128, 128, 0.349);
 }
 
 .Main-title h1 {

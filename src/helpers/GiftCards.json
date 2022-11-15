@@ -1,0 +1,30 @@
+{
+    "frameworks": [
+        {
+            "id": 1,
+            "name": "Hombre",
+            "web": "https://reactjs.org",
+            "submenu": ["opcion1", "opcion2", "opcion3"]
+        },
+        {
+            "id": 2,
+            "name": "Mujer",
+            "web": "https://angular.io"
+        },
+        {
+            "id": 3,
+            "name": "Accesorios",
+            "web": "https://polymer-project.org"
+        },
+        {
+            "id": 4,
+            "name": "Joyería",
+            "web": "https://svelte.dev"
+        },
+        {
+            "id": 5,
+            "name": "Promociones",
+            "web": "https://svelte.dev"
+        }
+    ]
+}

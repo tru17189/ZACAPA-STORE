@@ -1,12 +1,12 @@
 import React from 'react';
 import '../css/Burger_menu.css'
 
-const Analytics = () => {
+const Mujeres = () => {
     return(
         <div>
-            <h1>Analytics</h1>
+            <h1>Mujeres</h1>
         </div>
     )
 }
 
-export default Analytics;
+export default Mujeres;

@@ -1,0 +1,65 @@
+.grid-container-categories {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  margin-top: 8%;
+}
+
+@media (min-width: 300px) {
+  .grid-container-categories { 
+    margin-top: 20%; 
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-container-categories { 
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 8%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container-categories { 
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 5%;
+  }
+}
+  
+.grid-item-categories {
+  background-color: gray;
+  color: white;
+  font-family: 'Trebuchet MS';
+  font-size: 200%;
+  text-align: center;
+  padding: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 300px) {
+  .grid-item-categories {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-item-categories {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-item-categories {
+    height: 26rem;
+  }
+}
+
+.main-section-title {
+  color: white;
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 5%;
+}

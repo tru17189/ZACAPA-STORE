@@ -3,10 +3,10 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import './css/Burger_menu.css';
 import Sidebar from './Components/Sidebar'
-import Dashboard from './Components/Dashboard'
-import Analytics from './Components/Analytics'
-import About from './Components/About'
-import Another from './Components/Another';
+import NuevosIngresos from './Components/NuevosIngresos'
+import Hombres from './Components/Hombres'
+import Mujeres from './Components/Mujeres'
+import GiftCards from './Components/GiftCards';
 
 function App() {
   return (
@@ -16,10 +16,10 @@ function App() {
           <Sidebar>
             <Routes>
               <Route path="/sidebar" element={<Sidebar />}/>
-              <Route path="/dashboard" element={<Dashboard />}/>
-              <Route path="/analytics" element={<Analytics />}/>
-              <Route path="/about" element={<About />}/>
-              <Route path="/another" element={<Another />}/>
+              <Route path="/nuevosingresos" element={<NuevosIngresos />}/>
+              <Route path="/hombres" element={<Hombres />}/>
+              <Route path="/mujeres" element={<Mujeres />}/>
+              <Route path="/giftcards" element={<GiftCards />}/>
             </Routes>
           </Sidebar>
         </BrowserRouter>

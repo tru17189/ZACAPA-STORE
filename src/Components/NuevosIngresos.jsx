@@ -1,12 +1,12 @@
 import React from 'react';
 import '../css/Burger_menu.css'
 
-const Another = () => {
+const NuevosIngresos = () => {
     return(
         <div>
-            <h1>Another</h1>
+            <h1>Nuevos ingresos</h1>
         </div>
     )
 }
 
-export default Another;
+export default NuevosIngresos;

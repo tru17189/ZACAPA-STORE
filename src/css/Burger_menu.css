@@ -18,6 +18,8 @@ main {
     height: 100vh;
     transition: all 0.5s;
     z-index: 1;
+    border-right: solid;
+    border-color: rgba(128, 128, 128, 0.349);
 }
 
 .top_section {

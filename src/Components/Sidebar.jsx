@@ -1,34 +1,42 @@
 import React, { useState } from 'react';
 import '../css/Burger_menu.css';
-import {FaBars, FaRegChartBar, FaRProject, FaTh, FaTimes, FaUserAlt} from "react-icons/fa";
+import '../css/Stores.css'
+import { AiFillGift, AiOutlineMan, AiOutlineWoman } from "react-icons/ai";
+import { MdNewReleases, MdOutlineClose } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom';
 import Main_title from './Main_title';
 
 const Sidebar = ({children}) => {
+    // This constant is use to open the sidebar
     const[isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    //this constant is use to change background color of the shopping pages (Hombre, mujer, etc...)
+    
+    // The next json is the information that will be show in the sidebar
     const menuItem = [
         {
-            path:"/dashboard",
-            name:"Dashboard",
-            icon:<FaTh/>
+            path:"/nuevosingresos",
+            name:"Nuevos Ingresos",
+            icon:<MdNewReleases/>
         },
         {
-            path:"/analytics",
-            name:"Analytics",
-            icon:<FaRegChartBar/>
+            path:"/hombres",
+            name:"Hombres",
+            icon:<AiOutlineMan/>
         },
         {
-            path:"/about",
-            name:"About",
-            icon:<FaUserAlt/>
+            path:"/mujeres",
+            name:"Mujeres",
+            icon:<AiOutlineWoman/>
         },
         {
-            path: "/another",
-            name: "Another",
-            icon: <FaRProject />
+            path: "/giftcards",
+            name: "Gift cards",
+            icon: <AiFillGift />
         }
     ]
+
     return(
         <div className='container'>
             <div style={{width: isOpen ? "300px" : "50px"}} className='sidebar'>
@@ -37,13 +45,13 @@ const Sidebar = ({children}) => {
                         {marginLeft: isOpen ? "0px" : "0px"} && 
                         {display: isOpen ? "none" : "flex"}
                     } className='bars'>
-                        <FaBars onClick={toggle}/>
+                        <GiHamburgerMenu onClick={toggle}/>
                     </div>
                     <div style={
                         {marginLeft: isOpen ? "0px" : "0px"} && 
                         {display: isOpen ? "flex" : "none"}
                     } className='bars'>
-                        <FaTimes onClick={toggle}/>
+                        <MdOutlineClose onClick={toggle}/>
                     </div>
                 </div>
                 {
@@ -56,7 +64,9 @@ const Sidebar = ({children}) => {
                     ))
                 }
             </div>
-            <main>{children}</main>
+            <main>
+                {children}
+            </main>
             <Main_title msg="ZACAPA STORE" />
         </div>
     )
